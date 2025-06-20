@@ -26,8 +26,15 @@ const CatImage = () => {
 
   return (
     <div>
-      {loading ? <p>Loading...</p> : <img src={cats} alt="Some cat" />}
-      <button onClick={fetchCats}>New Image</button>
+      <div className={styles.catBlock}>
+        <h1>Cats coming...</h1>
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
+          <img className={styles.catImage} src={cats} alt="Some cat" />
+        )}
+      </div>
+      <button onClick={fetchCats}>New Cat</button>
     </div>
   );
 };

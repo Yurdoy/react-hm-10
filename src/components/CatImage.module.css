@@ -1,0 +1,27 @@
+div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.catBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(217, 175, 124);
+  border-radius: 10px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+.catImage {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
